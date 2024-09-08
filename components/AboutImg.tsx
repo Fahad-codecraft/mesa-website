@@ -159,17 +159,20 @@ const CoreTeam = () => {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="py-20 flex items-center justify-center flex-col">
-        <h1 className="md:text-7xl text-3xl lg:text-8xl font-bold text-center text-white relative z-20">
+
+      <div className="py-24 px-4 md:px-8 lg:px-16 flex items-center justify-center flex-col overflow-x-hidden">
+        <h1 className="md:text-5xl text-3xl lg:text-8xl font-bold text-center text-white relative z-20">
           OFFICE BEARER's
         </h1>
-        <div className="w-[40rem] mb-7 relative">
+
+        <div className="w-full max-w-xl mb-7 relative mx-auto">
           <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
           <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
           <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
           <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
         </div>
-        <div>
+
+        <div className="w-full overflow-x-hidden">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {officeBearer.map((member, index) => (
               <AboutImgs key={index} {...member} />

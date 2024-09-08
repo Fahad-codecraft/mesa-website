@@ -39,6 +39,7 @@ export function Navbar() {
           <MenuItem setActive={setActive} active={active} item="Events" className="text-[18px]">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/upcoming-events">ENGINEERS DAY</HoveredLink>
+              <HoveredLink href="/past-events">PAST EVENTS</HoveredLink>
             </div>
           </MenuItem>
           <Link href="/contact">
