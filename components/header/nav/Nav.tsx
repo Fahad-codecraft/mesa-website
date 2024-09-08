@@ -23,7 +23,7 @@ const navItems = [
       },
       {
         title: "Past Events",
-        href: "/past-events/2022-23",
+        href: "/past-events",
       }
     ]
   },
