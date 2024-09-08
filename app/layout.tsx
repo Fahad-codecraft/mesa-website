@@ -2,13 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav";
 import { Navbar } from "@/components/Navbar";
-import { Suspense } from "react";
-import Loading from "./loading";
-import Preloader from "@/components/Preloader";
 import MobileNav from "@/components/MobileNav";
-import Header from "@/components/header/Header";
 
 const inter = Poppins({
   weight: '400',
