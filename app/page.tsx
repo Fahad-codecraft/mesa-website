@@ -1,11 +1,7 @@
 import { ImageSlider } from "@/components/ImageSlider";
-import { Navbar } from "@/components/Navbar";
-import Image from "next/image";
-import Nav from "@/components/Nav";
 import HodFaculty from "@/components/HodFaculty";
 import PresAndVicePres from "@/components/PresAndVicePres";
 import ExPresidents from "@/components/ExPresidents";
-import { CanvasRevealEffectDemo } from "@/components/ExPresidentReveal";
 import Footer from "@/components/Footer";
 import { SparklesCore } from "@/components/ui/sparkels";
 
