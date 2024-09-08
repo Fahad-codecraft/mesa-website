@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation';
 import { menuSlide } from '../anim';
 import Linkjs from './Link';
 import Curve from './Curve';
-import Footer from './Footer';
 
 const navItems = [
   {
@@ -12,36 +11,69 @@ const navItems = [
     href: "/",
   },
   {
-    title: "Work",
-    href: "/work",
-  },
-  {
     title: "About",
     href: "/about",
+  },
+  {
+    title: "Events", // No href for Events
+    subItems: [
+      {
+        title: "Upcoming Events",
+        href: "/upcoming-events",
+      },
+      {
+        title: "Past Events",
+        href: "/past-events/2022-23",
+      }
+    ]
   },
   {
     title: "Contact",
     href: "/contact",
   },
-]
+];
+
 
 export default function Nav() {
-
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
     <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className={"z-[100] menu"}>
-       <div className={"body"}>
-            <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={"nav"}>
-                    {
-                      navItems.map( (data, index) => {
-                        return <Linkjs key={index} data={{...data, index}} isActive={selectedIndicator == data.href} setSelectedIndicator={setSelectedIndicator}></Linkjs>
-                      })
-                    }
-            </div>
+      <div className={"body"}>
+        <div onMouseLeave={() => { setSelectedIndicator(pathname) }} className={"nav"}>
+          {
+            navItems.map((data, index) => (
+              <div key={index}>
+                {/* If subItems exist, render the title without Link */}
+                {data.subItems ? (
+                  <motion.div className="non-clickable">{data.title}</motion.div>
+                ) : (
+                  <Linkjs
+                    data={{ ...data, index }}
+                    isActive={selectedIndicator === data.href}
+                    setSelectedIndicator={setSelectedIndicator}
+                  />
+                )}
+                {/* Render sub-items if they exist */}
+                {data.subItems && (
+                  <div className="sub-nav">
+                    {data.subItems.map((subItem, subIndex) => (
+                      <Linkjs
+                        key={subIndex}
+                        data={{ ...subItem, index:subIndex}}
+                        isActive={selectedIndicator === subItem.href}
+                        setSelectedIndicator={setSelectedIndicator}
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))
+          }
         </div>
-        <Curve />
+      </div>
+      <Curve />
     </motion.div>
-  )
+  );
 }
