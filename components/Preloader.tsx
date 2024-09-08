@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import React, { useEffect } from 'react';
 
 
@@ -17,7 +18,7 @@ const Preloader = () => {
   return (
     <div className="loaderWrapper">
       <div className="loader">
-        <img src="/logo copy.webp" alt="Logo" />
+        <Image height={100} width={120} src="/logo copy.webp" alt="Logo" />
       </div>
     </div>
   );

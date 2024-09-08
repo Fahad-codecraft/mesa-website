@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const ExPresidents = () => {
@@ -8,7 +9,7 @@ const ExPresidents = () => {
           <div className="col-lg-4">
             <div className="card">
               <div className="face front-face">
-                <img src="/ExPresidents/Omkar Kharade.webp" className="profile" />
+                <Image width={150} height={150} alt='Omkar Kharade' src="/ExPresidents/Omkar Kharade.webp" className="profile" />
                 <div className="pt-3 text-uppercase name">
                   Omkar Kharade
                 </div>
@@ -27,7 +28,7 @@ const ExPresidents = () => {
           <div className="col-lg-4">
             <div className="card">
               <div className="face front-face">
-                <img src="/ExPresidents/Johns Joseph.webp" className="profile" />
+                <Image width={150} height={150} alt='Johns Joseph' src="/ExPresidents/Johns Joseph.webp" className="profile" />
                 <div className="pt-3 text-uppercase name">
                   Johns Joseph
                 </div>
@@ -46,7 +47,7 @@ const ExPresidents = () => {
           <div className="col-lg-4">
             <div className="card">
               <div className="face front-face">
-                <img src="/ExPresidents/Mihir_Gharat.webp" className="profile" />
+                <Image width={150} height={150} alt='Mihir Gharat' src="/ExPresidents/Mihir_Gharat.webp" className="profile" />
                 <div className="pt-3 text-uppercase name">
                   Mihir Gharat
                 </div>
