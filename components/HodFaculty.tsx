@@ -11,7 +11,7 @@ const HodFaculty = () => {
             alt="Hod" 
             width={800} 
             height={800} 
-            src="/HodFaculty/Hod.png"
+            src="/HodFaculty/Hod.webp"
             className='rounded-lg object-cover w-full h-auto'
             priority
           />
@@ -47,7 +47,7 @@ const HodFaculty = () => {
             width={600} 
             height={600} 
             alt="Faculty Coordinator image" 
-            src="/HodFaculty/Faculty_co.png"
+            src="/HodFaculty/Faculty_co.webp"
             className='rounded-lg object-cover w-full h-auto' 
             priority
           />
