@@ -4,6 +4,7 @@ import PresAndVicePres from "@/components/PresAndVicePres";
 import ExPresidents from "@/components/ExPresidents";
 import Footer from "@/components/Footer";
 import { SparklesCore } from "@/components/ui/sparkels";
+import { InfiniteMoving } from "@/components/InfiniteMoving";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         />
       </div>
       <main>
+        <InfiniteMoving />
         <ImageSlider />
         <HodFaculty />
         <hr className='mb-6' />

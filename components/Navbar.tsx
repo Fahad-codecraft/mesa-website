@@ -3,6 +3,13 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from "./ui/accordian";
+
 
 
 export function Navbar() {
@@ -31,14 +38,26 @@ export function Navbar() {
       <div className="lg:flex">
         <Menu>
           <Link href="/">
-            <MenuItem  className="text-[18px]" item="Home" />
+            <MenuItem className="text-[18px]" item="Home" />
           </Link>
           <Link href="/about">
             <MenuItem className="text-[18px]" item="About Us" />
           </Link>
           <MenuItem setActive={setActive} active={active} item="Events" className="text-[18px]">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/upcoming-events">ENGINEERS DAY</HoveredLink>
+              {/* <HoveredLink href="/upcoming-events"> */}
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1">
+                  <AccordionTrigger className="hover:text-neutral-600">Upcoming Events</AccordionTrigger>
+                  <Link href="/upcoming-events">
+                    <AccordionContent className="px-4 hover:text-neutral-600">
+                      Engg. Day
+                    </AccordionContent>
+                  </Link>
+                </AccordionItem>
+              </Accordion>
+
+              {/* </HoveredLink> */}
               <HoveredLink href="/past-events">PAST EVENTS</HoveredLink>
             </div>
           </MenuItem>

@@ -474,7 +474,7 @@ transform: translateY(140px);
 	.body{
 			box-sizing: border-box;
 			height: 100%;
-			padding: 100px;
+			padding: 70px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -652,7 +652,7 @@ transform: translateY(140px);
 }
 
 .body {
-	padding: 50px; /* Reduce padding for better spacing */
+	padding: 40px; /* Reduce padding for better spacing */
 }
 }
 
