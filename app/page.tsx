@@ -5,6 +5,12 @@ import ExPresidents from "@/components/ExPresidents";
 import Footer from "@/components/Footer";
 import { SparklesCore } from "@/components/ui/sparkels";
 import { InfiniteMoving } from "@/components/InfiniteMoving";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Team Mesa | Home',
+  description: '...',
+}
 
 export default function Home() {
   return (

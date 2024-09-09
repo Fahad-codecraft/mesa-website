@@ -12,7 +12,7 @@ export function ImageSlider() {
     "/slideshow/Know Japan.webp",
   ];
   return (
-    <ImagesSlider className="h-[400px] w-auto lg:h-screen top-0 md:top-24 lg:top-16" images={images}>
+    <ImagesSlider className="h-[300px] w-auto lg:h-screen top-0 md:top-24 lg:top-16 mt-1 md:mt-0" images={images}>
       <motion.div
         initial={{
           opacity: 0,

@@ -1,6 +1,12 @@
 import Past21_22 from '@/components/events/Past21_22'
 import Past22_23 from '@/components/events/Past22_23'
+import { Metadata } from 'next'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: 'Team Mesa | Past Events',
+  description: '...',
+}
 
 const page = () => {
   return (
