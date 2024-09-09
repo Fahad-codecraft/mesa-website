@@ -4,16 +4,16 @@ import { SparklesCore } from "./ui/sparkels";
 const CoreTeam = () => {
   const officeBearer = [
     {
-      name: 'Shriram Nimbalkar',
-      role: 'Vice-President',
-      imgSrc: '/About/1. Shriram.webp',
-      linkedinUrl: 'https://www.linkedin.com/in/shreyash-mogaveera'
-    },
-    {
       name: 'Prajakta Wagh',
       role: 'President',
       imgSrc: '/About/2. Prajakta.webp',
       linkedinUrl: 'https://www.linkedin.com/in/prajakta-wagh-0388b3259'
+    },
+    {
+      name: 'Shriram Nimbalkar',
+      role: 'Vice-President',
+      imgSrc: '/About/1. Shriram.webp',
+      linkedinUrl: 'https://www.linkedin.com/in/shreyash-mogaveera'
     },
     {
       name: 'Shravani Mahajan',

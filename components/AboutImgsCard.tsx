@@ -14,7 +14,7 @@ const TeamMemberCard = ({ name, role, imgSrc, linkedinUrl }: AboutImgsProps) => 
     <div className="card_1 backdrop-blur-sm">
       <div className="content">
         <div>
-          <Image width={290} height={290} src={imgSrc} quality={80} alt={`${name}'s profile picture`} />
+          <Image width={290} height={290} src={imgSrc} quality={80} alt={`${name}'s profile picture`} className='rounded-xl'/>
         </div>
         <div className="contentBx">
           <h3>│{name}<br /><span>{role}</span></h3>
