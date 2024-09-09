@@ -14,6 +14,7 @@ const HodFaculty = () => {
             src="/HodFaculty/Hod.webp"
             className='rounded-lg object-cover w-full h-auto'
             priority
+            quality={70}
           />
         </div>
         <div className="pl-5 md:pl-10 md:order-2 w-full md:w-1/2 text-center md:text-left">
