@@ -1,6 +1,5 @@
 // components/TeamMemberCard.js
 import Image from 'next/image';
-import Link from 'next/link';
 
 interface AboutImgsProps {
   name: string;

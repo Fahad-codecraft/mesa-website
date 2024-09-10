@@ -3,6 +3,13 @@ import { Card } from './Card'
 
 const positions = [
   {
+    id: 2,
+    name: "Shriram Nimbalkar",
+    position: "Vice President",
+    src: '/About/1. Shriram.webp',
+    link: "hello"
+  },
+  {
     id: 1,
     name: "Prajakta Wagh",
     position: "President",
@@ -10,17 +17,10 @@ const positions = [
     link: "hello"
   },
   {
-    id: 2,
-    name: "Abhishek Salukhe",
-    position: "Vice President",
-    src: "/Core/Abhishek.webp",
-    link: "hello"
-  },
-  {
     id: 3,
-    name: "Shreyash Mogaveera",
+    name: "Shravani Mahajan",
     position: "Vice President",
-    src: "/Core/Shreyash.webp",
+    src: '/About/3. Shravani Mahajan.webp',
     link: "hello"
 
   },
