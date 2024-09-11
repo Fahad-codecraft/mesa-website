@@ -154,7 +154,7 @@ body {
   align-items: center;
   backdrop-filter: blur(10px);
   perspective: 500px;
-  background: rgba(255, 255, 255, 0.06);
+  /* background: rgba(255, 255, 255, 0.06); */
   margin-left: 35px;
   margin-right: 35px;
   overflow: hidden;
