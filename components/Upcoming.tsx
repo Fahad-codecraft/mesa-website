@@ -75,7 +75,7 @@ const LivePainting = () => {
               <li>Participants will get for 90min for completion of their painting</li>
               <li>Participants must carry their own items for painting</li>
               <li>Drawing sheets will be provided for each participant</li>
-              <li>Judge discision will be finale for winners</li>
+              <li>Judge decision will be finale for winners</li>
             </ul>
           </span>
         </p>
@@ -113,7 +113,7 @@ const FootBall = () => {
               <li>Knockout Format: It's a single-elimination tournament, so every match is crucial!</li>
             </ul>
           </span>
-          <p className="mt-4">
+          <p className="mt-4  ">
             <span className="font-bold">Entry Fee: </span>
             <span>
               <ul className="list-disc">

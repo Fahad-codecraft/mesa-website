@@ -20,11 +20,11 @@ const HodFaculty = () => {
         <div className="pl-5 md:pl-10 md:order-2 w-full md:w-1/2 text-center md:text-left">
           <div className="pr-5 mt-3 md:mt-0 md:p-10 text-[15px] md:text-[17px] text-white leading-relaxed">
             <p>
-              Dr. P. A. Deshmukh has more than 24 years of teaching and research experience in Heat Transfer, Fluid, and Thermal Engineering. His research group engages in both fundamental and applied research to provide solutions to immediate engineering problems, focusing on advanced cooling technologies, customized heat spreaders, performance improvement of centrifugal pumps, and computational fluid dynamics.
+              Dr. Pravin R. Kale years of teaching and research experience in Heat Transfer, Fluid, and Thermal Engineering. His research group engages in both fundamental and applied research to provide solutions to immediate engineering problems, focusing on advanced cooling technologies, customized heat spreaders, performance improvement of centrifugal pumps, and computational fluid dynamics.
             </p>
           </div>
           <div className="p-[10px] text-white">
-            <h1 className="text-[20px] md:text-[24px] font-bold">Dr. Padmakar A. Deshmukh</h1>
+            <h1 className="text-[20px] md:text-[24px] font-bold">Dr. Pravin R. Kale </h1>
             <p>Head of Department</p>
           </div>
         </div>

@@ -17,16 +17,16 @@ const page = () => {
           id="tsparticlesfullpage"
           background="transparent"
           minSize={1}
-          maxSize={5}
-          particleDensity={50}
+          maxSize={4}
+          particleDensity={30}
           className="w-full h-full"
           particleColor="#ECBD00"
-          speed={12}
+          speed={11}
         />
       </div>
       <div className='w-full'>
         <Past22_23 />
-        <Past21_22 />
+        {/* <Past21_22 /> */}
       </div>
     </>
   )
